@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de Usuario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="background">
+    <img src="assets/background.gif" alt="background">
+  </div>
+  <main>
+    <header>
+      <img src="assets/logo_name.png" alt="logo del nombre CYTUS">
+      <h1 id="title">Encuesta a Usuarios</h1>
+      <p id="description">Gracias por ayudarnos a mejorar la experiencia</p>
+    </header>
+    <form action="#" method="post" id="survey-form" autocomplete="off">
+      <label for="name" id="name-label">Usuario</label>
+      <input type="text" name="name" id="name" placeholder="Usuario registrado en el juego" autocomplete="new-password" required>
+
+      <label for="age" id="age-label">Edad</label>
+      <input type="number" name="age" id="age" min="0" placeholder="Cuál es tu edad" required>
+
+      <label for="email" id="email-label">Correo Electrónico</label>
+      <input type="email" name="email" id="email" placeholder="Correo de contacto" required>
+
+      <label for="dropdown">A que te dedicas?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="school">Estudiante de colegio</option>
+        <option value="institute">Estudiante de instituto</option>
+        <option value="college">Estudiante de universidad</option>
+        <option value="midTimeWork">Trabajador a medio tiempo</option>
+        <option value="fullTimeWork">Trabajador a tiempo completo</option>
+        <option value="other">Otro</option>
+      </select>
+      <div class="option-container">
+        <p>Cuanto tiempo sueles jugar usualmente?</p>
+        <label for="one">
+          <input type="radio" name="time" id="one" value="one-hr">
+          Menos de 1 hora
+        </label>
+        <label for="two">
+          <input type="radio" name="time" id="two" value="two-hr">
+          De 1 a 2 horas
+        </label>
+        <label for="more">
+          <input type="radio" name="time" id="more" value="more-hr">
+          Mas de 2 horas
+        </label>
+      </div>
+      <div class="option-container">
+        <p>Entre estas canciones cuales te gustan mas?</p>
+        <label for="fire">
+          <input type="checkbox" name="songs" id="fire" value="fire">
+          Fireflies
+          <a href="https://youtu.be/tJW0xjX0E48" target="_blank" rel="noopener noreferrer">
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#e6e6e6" stroke-width="0.45600000000000007"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8894 5.1786V16.4786C20.8894 18.4586 19.2794 20.0686 17.2994 20.0686C15.3294 20.0686 13.7094 18.4586 13.7094 16.4786C13.7094 14.5086 15.3294 12.8986 17.2994 12.8986C18.1394 12.8986 18.8894 13.1886 19.4994 13.6686V7.7186L10.2894 10.3386V18.4086C10.2894 20.3886 8.66937 21.9986 6.69937 21.9986C4.71937 21.9986 3.10938 20.3886 3.10938 18.4086C3.10938 16.4386 4.71937 14.8286 6.69937 14.8286C7.52938 14.8286 8.27938 15.1186 8.88938 15.5886V6.7486C8.88938 5.2786 9.77938 4.1386 11.1894 3.7586L16.9694 2.1786C18.1394 1.8586 19.1294 1.9686 19.8294 2.5086C20.5394 3.0386 20.8894 3.9386 20.8894 5.1786Z" fill="#e60a0a"></path> </g></svg>
+          </a>
+        </label>
+        <label for="who">
+          <input type="checkbox" name="songs" id="who" value="who">
+          Who i am?
+          <a href="https://youtu.be/YxJXrqhhwPA" target="_blank" rel="noopener noreferrer">
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#e6e6e6" stroke-width="0.45600000000000007"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8894 5.1786V16.4786C20.8894 18.4586 19.2794 20.0686 17.2994 20.0686C15.3294 20.0686 13.7094 18.4586 13.7094 16.4786C13.7094 14.5086 15.3294 12.8986 17.2994 12.8986C18.1394 12.8986 18.8894 13.1886 19.4994 13.6686V7.7186L10.2894 10.3386V18.4086C10.2894 20.3886 8.66937 21.9986 6.69937 21.9986C4.71937 21.9986 3.10938 20.3886 3.10938 18.4086C3.10938 16.4386 4.71937 14.8286 6.69937 14.8286C7.52938 14.8286 8.27938 15.1186 8.88938 15.5886V6.7486C8.88938 5.2786 9.77938 4.1386 11.1894 3.7586L16.9694 2.1786C18.1394 1.8586 19.1294 1.9686 19.8294 2.5086C20.5394 3.0386 20.8894 3.9386 20.8894 5.1786Z" fill="#e60a0a"></path> </g></svg>
+          </a>
+        </label>
+        <label for="incy">
+          <input type="checkbox" name="songs" id="incy" value="incy">
+          Incyde
+          <a href="https://youtu.be/-1OiVXRGE-U" target="_blank" rel="noopener noreferrer">
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#e6e6e6" stroke-width="0.45600000000000007"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8894 5.1786V16.4786C20.8894 18.4586 19.2794 20.0686 17.2994 20.0686C15.3294 20.0686 13.7094 18.4586 13.7094 16.4786C13.7094 14.5086 15.3294 12.8986 17.2994 12.8986C18.1394 12.8986 18.8894 13.1886 19.4994 13.6686V7.7186L10.2894 10.3386V18.4086C10.2894 20.3886 8.66937 21.9986 6.69937 21.9986C4.71937 21.9986 3.10938 20.3886 3.10938 18.4086C3.10938 16.4386 4.71937 14.8286 6.69937 14.8286C7.52938 14.8286 8.27938 15.1186 8.88938 15.5886V6.7486C8.88938 5.2786 9.77938 4.1386 11.1894 3.7586L16.9694 2.1786C18.1394 1.8586 19.1294 1.9686 19.8294 2.5086C20.5394 3.0386 20.8894 3.9386 20.8894 5.1786Z" fill="#e60a0a"></path> </g></svg>
+          </a>
+        </label>
+        <label for="gloo">
+          <input type="checkbox" name="songs" id="gloo" value="gloo">
+          99 Glooms
+          <a href="https://youtu.be/l-hUsYmjDZ4" target="_blank" rel="noopener noreferrer">
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#e6e6e6" stroke-width="0.45600000000000007"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8894 5.1786V16.4786C20.8894 18.4586 19.2794 20.0686 17.2994 20.0686C15.3294 20.0686 13.7094 18.4586 13.7094 16.4786C13.7094 14.5086 15.3294 12.8986 17.2994 12.8986C18.1394 12.8986 18.8894 13.1886 19.4994 13.6686V7.7186L10.2894 10.3386V18.4086C10.2894 20.3886 8.66937 21.9986 6.69937 21.9986C4.71937 21.9986 3.10938 20.3886 3.10938 18.4086C3.10938 16.4386 4.71937 14.8286 6.69937 14.8286C7.52938 14.8286 8.27938 15.1186 8.88938 15.5886V6.7486C8.88938 5.2786 9.77938 4.1386 11.1894 3.7586L16.9694 2.1786C18.1394 1.8586 19.1294 1.9686 19.8294 2.5086C20.5394 3.0386 20.8894 3.9386 20.8894 5.1786Z" fill="#e60a0a"></path> </g></svg>
+          </a>
+        </label>
+        <label for="loom">
+          <input type="checkbox" name="songs" id="loom" value="loom">
+          Loom
+          <a href="https://youtu.be/Ul8eDFEeGhc" target="_blank" rel="noopener noreferrer">
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#e6e6e6" stroke-width="0.45600000000000007"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8894 5.1786V16.4786C20.8894 18.4586 19.2794 20.0686 17.2994 20.0686C15.3294 20.0686 13.7094 18.4586 13.7094 16.4786C13.7094 14.5086 15.3294 12.8986 17.2994 12.8986C18.1394 12.8986 18.8894 13.1886 19.4994 13.6686V7.7186L10.2894 10.3386V18.4086C10.2894 20.3886 8.66937 21.9986 6.69937 21.9986C4.71937 21.9986 3.10938 20.3886 3.10938 18.4086C3.10938 16.4386 4.71937 14.8286 6.69937 14.8286C7.52938 14.8286 8.27938 15.1186 8.88938 15.5886V6.7486C8.88938 5.2786 9.77938 4.1386 11.1894 3.7586L16.9694 2.1786C18.1394 1.8586 19.1294 1.9686 19.8294 2.5086C20.5394 3.0386 20.8894 3.9386 20.8894 5.1786Z" fill="#e60a0a"></path> </g></svg>
+          </a>
+        </label>
+        <label for="ninguna">
+          <input type="checkbox" name="ninguna" id="ninguna" value="ninguna">
+          Ninguna
+        </label>
+      </div>
+
+      <label for="number" id="number-label">Del 1 al 10 ¿Cual es tu nivel de satisfacción con el juego?</label>
+      <input type="number" name="score" id="number" min="1" max="10" placeholder="Nota" required>
+
+      <label for="feedback">Hay algo que no te gusta o que recomendarías mejorar?</label>
+      <textarea name="feedback" id="feedback" cols="30" rows="3" placeholder="Haznos saber que por favor"></textarea>
+      <button type="submit" id="submit">
+        <div id="box">
+          <span>Enviar</span>
+        </div>
+      </button>
+    </form>
+    <p id="thanks">Gracias por tu tiempo!!!</p>
+  </main>
+  <p>© 2022 Rayark Inc. All rights reserved.</p>
+  <footer>
+    <address>
+      <a href="https://github.com/MauBedoya" target="_blank">
+        <svg fill="#9999A7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40px" height="40px"><path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/mauricio-bedoya-deheza-106a99252" target="_blank">
+        <svg width="30" height="30" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.875 0.032959H2.12012C1.26074 0.032959 0.5625 0.740967 0.5625 1.61011V20.3308C0.5625 21.2 1.26074 21.908 2.12012 21.908H20.875C21.7344 21.908 22.4375 21.2 22.4375 20.3308V1.61011C22.4375 0.740967 21.7344 0.032959 20.875 0.032959ZM7.17383 18.783H3.93164V8.34351H7.17871V18.783H7.17383ZM5.55273 6.91772C4.5127 6.91772 3.67285 6.073 3.67285 5.03784C3.67285 4.00269 4.5127 3.15796 5.55273 3.15796C6.58789 3.15796 7.43262 4.00269 7.43262 5.03784C7.43262 6.07788 6.59277 6.91772 5.55273 6.91772ZM19.3271 18.783H16.085V13.7048C16.085 12.4939 16.0605 10.9363 14.4004 10.9363C12.7109 10.9363 12.4521 12.2546 12.4521 13.6169V18.783H9.20996V8.34351H12.3203V9.76929H12.3643C12.7988 8.94897 13.8584 8.08472 15.4355 8.08472C18.7168 8.08472 19.3271 10.2478 19.3271 13.0603V18.783Z" fill="#9999A7"/>
+        </svg>
+      </a>
+      <a href="mailto:bedoyadehezamauricio@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" width="40px" height="40px">
+          <g id="surface51566634">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(60.000002%,60.000002%,65.490198%);fill-opacity:1;" d="M 8 10 C 5.8125 10 4 11.8125 4 14 L 4 46 C 4 48.1875 5.8125 50 8 50 L 52 50 C 54.1875 50 56 48.1875 56 46 L 56 14 C 56 11.8125 54.1875 10 52 10 Z M 13.398438 14 L 46.601562 14 L 30 26.269531 Z M 10 18.949219 L 30 33.730469 L 50 18.949219 L 50 46 L 10 46 Z M 10 18.949219 "/>
+          </g>
+          </svg>
+      </a>
+    </address>
+  </footer>
+</body>
+</html>
